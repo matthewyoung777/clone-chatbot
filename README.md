@@ -21,3 +21,9 @@ The `clone-chatbot` serves as the backend for a chatbot that uses Retrieval-Augm
 git clone https://github.com/your-username/clone-chatbot.git
 cd clone-chatbot
 ```
+
+### 2. Run the app
+
+```bash
+uvicorn main:app --reload
+```
