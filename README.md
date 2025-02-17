@@ -95,3 +95,18 @@ pip install -r requirements.txt
 ```bash
 uvicorn main:app --reload
 ```
+
+OR
+
+```bash
+fastapi dev main.py
+```
+
+for auto reload
+OR
+
+```bash
+fastapi run main.py
+```
+
+for production
