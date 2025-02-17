@@ -7,9 +7,9 @@ The `clone-chatbot` serves as the backend for a chatbot that uses Retrieval-Augm
 
 ## **Features:**
 
--   **RAG-powered**: Retrieves context from a PostgreSQL database containing relevant content (e.g., background, projects, skills).
--   **LLM Integration**: Uses OpenAI API for generating responses based on retrieved context.
--   **Python FastAPI**: Fast and efficient backend API for querying the chatbot.
+- **RAG-powered**: Retrieves context from a PostgreSQL database containing relevant content (e.g., background, projects, skills).
+- **LLM Integration**: Uses OpenAI API for generating responses based on retrieved context.
+- **Python FastAPI**: Fast and efficient backend API for querying the chatbot.
 
 ---
 
@@ -22,7 +22,20 @@ git clone https://github.com/your-username/clone-chatbot.git
 cd clone-chatbot
 ```
 
-### 2. Run the app
+### 2. Set up environment
+
+```bash
+# create virtual environment
+python -m venv venv
+# activate the virtual environment
+source venv/bin/activate  # Mac/Linux
+# OR
+venv\Scripts\activate      # Windows
+# install dependencies
+pip install -r requirements.txt
+```
+
+### 3. Run the app
 
 ```bash
 uvicorn main:app --reload
