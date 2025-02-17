@@ -48,7 +48,7 @@ A user asks a question(query), which is then used with the same embedding model 
 
 ##### 2. Vector simliarity Search
 
-Most relevant documents are found by taking the vector embedding of the query, and finding the nearest vectors by calculating cosine similarity or euclidian distance in the vector database.
+Most relevant documents are found by taking the vector embedding of the query, and finding the nearest vectors by calculating cosine similarity in the vector database.
 
 ### Augmentation
 
