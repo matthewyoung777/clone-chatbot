@@ -1,11 +1,14 @@
-from app.utils import insert_embedding, search_similar_vectors
+from app.embeddings import search_embeddings, generate_query_embedding
 
 # Example vector (adjust based on your embedding model)
-example_vector = [0.1] * 1536
 
-# Insert data
-insert_embedding("This is a test sentence.", example_vector)
 
-# Query similar vectors
-results = search_similar_vectors(example_vector)
-print(results)
+query = "What is the tech stack of Forge Fitness?"
+query_embedding = generate_query_embedding(query)
+
+# %%
+search_results = search_embeddings(query_embedding)
+
+# %%
+for result in search_results:
+    print(f"Content: {result[0]}")
