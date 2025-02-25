@@ -70,26 +70,26 @@ def create_index():
     conn.close()
 
 
-def search_similar_vectors(vector: list):
-    """Find the most similar entries using pgvector"""
+def search_embeddings(query_vector, top_k=5):
     conn = psycopg2.connect(DATABASE_URL)
     cursor = conn.cursor()
 
+    # Perform vector search using cosine similarity or other metrics
     cursor.execute(
         """
-        SELECT content, vector <=> %s AS similarity
+        SELECT content, vector
         FROM embeddings
-        ORDER BY similarity
-        LIMIT 5;
-    """,
-        (vector,),
+        ORDER BY vector <-> %s::vector
+        LIMIT %s;
+        """,
+        (query_vector, top_k),
     )
+    rows = cursor.fetchall()
 
-    results = cursor.fetchall()
     cursor.close()
     conn.close()
 
-    return results
+    return rows  # This will contain the most relevant content based on the query
 
 
 # create_index()

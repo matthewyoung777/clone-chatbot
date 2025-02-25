@@ -1,28 +1,101 @@
-### **Forge Fitness: A Complete Fitness Solution**
+# Forge Fitness
 
-**Timeline:** September 2023 – Present (Part time side project)
+## Timeline
 
-Forge Fitness is a gamified mobile app designed to enhance users' fitness journeys with personalized workout plans, real-time progress tracking, and an engaging ranking system.
+**September 2023 – Present** (Part-time side project)
 
-#### **Key Features**
+## Overview
 
-- **Personalized Workout Generator Feature**: Users can generate custom workout routines based on user goals and preferences or build their own with a high level of customization if they know what sort of exercises they like.
-- **Rank System with Battle Pass Feature**: The weekly rank system gamifies working out for users with challenges, a point/rank system by showing progression towards weekly titles and accolates to stay on track with their goals.
-- **Exercise Templates and Custom Workouts Feature**: Offers a variety of exercise templates and allows users to create custom workout plans.
-- **Performance Tracking and Analytics Feature**: Logs workout data and provides visual analytics dashboards for tracking progress.
+Forge Fitness is a mobile application designed to enhance users' fitness journey in a gamified way. It includes:
 
-#### **Unique Design & User Experience**
+- Personalized workout plans
+- Real-time progress tracking
+- An engaging ranking system to encourage consistency
 
-Intuitive and easy-to-use interface with a Forge theme, providing an immersive experience that combines fun, challenge, and accomplishment.
+Built around a **Forge/Anvil theme**, the app provides an immersive experience where users can:
 
-#### **Tech Stack/Technologies Overview**
+- Craft or auto-generate workouts
+- Track performance
+- Complete challenges
+- Unlock achievements
 
-- **Frontend**: React Native for cross-platform mobile development and TypeScript.
-- **Backend**: Node.js with Express for the API server.
-- **Database**: MongoDB for data storage.
-- **AI/ML**: OpenAI's GPT-3 for generating personalized workout recommendations.
-- **Hosting**: Render for cloud infrastructure and deployment.
+## Key Features
 
-#### **Future Development Plans**
+### Personalized Workout Generator
 
-- Enhanced AI for smarter workout suggestions and personalized fitness coaching.
+- Users create workout routines based on goals (strength, toning, weight loss)
+- Dynamic generator customizes workouts based on selected focus areas (e.g., biceps, triceps, shoulders)
+- **Challenge System** rewards users with points and achievements
+
+### Rank System with Battle Pass Theme
+
+- Users earn points for workouts and exercises
+- **Rank tiers:** Bronze, Silver, Gold, Platinum, Diamond
+- **Battle Pass progression system** unlocks rewards over time
+
+### Exercise Templates & Custom Workouts
+
+- Access a **database of exercise templates**
+- Covers compound (squats, deadlifts) & isolation exercises
+- Users can build custom workouts from scratch
+
+### Performance Tracking & Analytics
+
+- Logs workouts, sets, reps, and weights
+- **Visual dashboards** for progress insights
+- Tracks improvements in strength, endurance, and growth
+
+### Unique Design & User Experience
+
+- **Intuitive interface** for all fitness levels
+- **Forge/Anvil theme** for immersive branding
+
+### AI-Powered Smart Recommendations
+
+- Learns from user workout data
+- Suggests improvements, variations, and new challenges
+- Helps break plateaus with adaptive feedback
+
+## Future Development Plans
+
+- **Enhanced AI** for smarter workout recommendations
+- **Wearable integration** for real-time tracking
+- **Community features** (challenges, competition with friends)
+- **More complex ranking system** for exclusive unlocks
+
+## Join the Forge Fitness Journey
+
+Whether you're a beginner or an experienced athlete, Forge Fitness provides:
+
+- **Tools** for structured training
+- **Motivation** through gamification
+- **A community** to stay accountable
+
+## Tech Stack Overview
+
+### Frontend (Mobile App)
+
+- **Expo:** Cross-platform development for iOS & Android
+- **React Native:** UI built with TypeScript & React
+
+### Backend (API)
+
+- **Node.js & Express.js:** RESTful API for handling logic
+- **JWT (JSON Web Tokens):** Secure authentication
+- **MongoDB:** NoSQL database for workouts & user data
+
+### Machine Learning & AI
+
+- **OpenAI API (GPT-4):** Chatbot for fitness guidance
+
+### Infrastructure & Deployment
+
+- **Render:** Cloud hosting with CI/CD and scaling
+
+## Development Team
+
+- **Lead Developer:** Oversees project vision & execution
+- **Team of 3 developers:** Experienced colleagues working part-time
+- **Agile workflow:** Bug reporting, prioritization, and communication
+
+---
