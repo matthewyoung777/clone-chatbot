@@ -2,8 +2,7 @@
 import os
 from dotenv import load_dotenv
 from langchain_text_splitters import (
-    RecursiveCharacterTextSplitter,
-    MarkdownTextSplitter,
+    MarkdownHeaderTextSplitter,
 )
 import os
 from langchain_community.document_loaders import (
@@ -17,33 +16,21 @@ OPENAI_API_KEY = os.environ["OPENAI_API_KEY"]
 DATABASE_URL = os.environ["DATABASE_URL"]
 
 
-def get_chunks(document_path: str):
-    loader = UnstructuredMarkdownLoader(document_path)
-    documents = loader.load()
-    text_splitter = RecursiveCharacterTextSplitter(
-        chunk_size=500,
-        chunk_overlap=50,
-        length_function=len,
-        is_separator_regex=False,
-    )
-    chunks = text_splitter.split_documents(documents)
-    return chunks
+def get_chunks_by_headers(documents):
 
-
-def get_chunks_by_headers(document_path: str):
-    loader = UnstructuredMarkdownLoader(document_path)
-    documents = loader.load()
-    headers_to_split_on = [
+    headers = [
         ("#", "Header 1"),
         ("##", "Header 2"),
         ("###", "Header 3"),
     ]
-    text_splitter = MarkdownTextSplitter(headers_to_split_on=headers_to_split_on)
-    chunks = text_splitter.split_documents(documents)
+    text_splitter = MarkdownHeaderTextSplitter(
+        headers_to_split_on=headers, strip_headers=False
+    )
+    chunks = text_splitter.split_text(documents)
     return chunks
 
 
-def generate_embeddings(chunks, batch_size=10):
+def generate_embeddings(chunks, batch_size=5):
     embeddings = OpenAIEmbeddings(model="text-embedding-ada-002")  # 8192 token limit
     all_embeddings = []
 
