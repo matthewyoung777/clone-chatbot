@@ -93,3 +93,14 @@ def search_embeddings(query_vector, top_k=5):
 
 
 # create_index()
+
+
+def clear_embeddings_table():
+    conn = psycopg2.connect(DATABASE_URL)
+    cursor = conn.cursor()
+
+    cursor.execute("DELETE FROM embeddings;")
+    conn.commit()
+
+    cursor.close()
+    conn.close()

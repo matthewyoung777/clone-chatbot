@@ -24,6 +24,17 @@ Information about me is first prepared, descriptions for work experience, projec
 ##### 2. Chunking the Data
 
 The data is then broken down into smaller parts, a process called "chunking". This is important because only so much text can be used as input for embedding models, so chunks must be small enough to be processed.
+Markdown header level chunking structure:
+
+- Projects (1)
+  - ProjectName (2)
+    - Overview(2)
+    - Features(2)
+    - TechStack(2)
+- Work Experience (1)
+  - Role Name + Desc (2)
+- Interests (1)
+  - Interest Name (2)
 
 ##### 3. Generate Embeddings for Vector Database
 
@@ -32,10 +43,10 @@ For example a row would look like:
 
 ```json
 {
-    id: 1,
-    category: "hobbies"
-    text: "Matt really loves soccer and basketball...",
-    embedding: [0.42848024, 0.38188, ...],
+    "id": 1,
+    "category": "hobbies"
+    "text": "I really loves soccer and basketball...",
+    "embedding": [0.42848024, 0.38188, ...],
 }
 ```
 
