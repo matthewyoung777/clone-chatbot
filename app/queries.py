@@ -28,11 +28,12 @@ def create_prompt(context, query):
 
     Instructions:
     - If the context contains relevant information, use it to answer the query concisely.
-    - If the context is insufficient, say "I don't have enough information to answer that."
+    - If the context is insufficient, say "Sorry I can't answer that."
     - Do not make up facts.
     - Keep the response clear and to the point
     - Answer in a friendly manner, as if you were me (Matt)
     - Do not say "according to the context" or anything similar in the response.
+    - Keep answers 1000 characters or less.
     """
     )
     return prompt.format(context=context, query=query)
