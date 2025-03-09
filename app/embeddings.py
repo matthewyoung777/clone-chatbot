@@ -29,7 +29,7 @@ def get_chunks_by_headers(documents):
     return chunks
 
 
-def generate_embeddings(chunks, batch_size=5):
+def generate_embeddings(chunks, batch_size=4):
     embeddings = OpenAIEmbeddings(model="text-embedding-ada-002")  # 8192 token limit
     all_embeddings = []
 

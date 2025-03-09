@@ -15,7 +15,7 @@ DATABASE_URL = os.environ["DATABASE_URL"]
 
 
 # %% Get the documents
-document_path = "../data/about.md"
+document_path = "data/about.md"
 with open(document_path, "r", encoding="utf-8") as file:
     markdown_text = file.read()
 

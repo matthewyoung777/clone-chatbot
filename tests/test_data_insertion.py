@@ -15,7 +15,7 @@ DATABASE_URL = os.environ["DATABASE_URL"]
 
 
 # %% Get the documents
-document_path = "../data/about.md"
+document_path = "data/about.md"
 with open(document_path, "r", encoding="utf-8") as file:
     markdown_text = file.read()
 
@@ -27,6 +27,6 @@ for chunk in chunks:
     print("---------")
     pprint(chunk)
 # %% Generate Embeddings and insert them to the database
-# embeddings = generate_embeddings(chunks)
+embeddings = generate_embeddings(chunks)
 
-# batch_insert_embeddings(chunks, embeddings)
+batch_insert_embeddings(chunks, embeddings)
