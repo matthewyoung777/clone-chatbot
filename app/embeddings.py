@@ -4,10 +4,6 @@ from dotenv import load_dotenv
 from langchain_text_splitters import (
     MarkdownHeaderTextSplitter,
 )
-import os
-from langchain_community.document_loaders import (
-    UnstructuredMarkdownLoader,
-)
 from langchain_openai import OpenAIEmbeddings
 
 
@@ -24,9 +20,12 @@ def get_chunks_by_headers(documents):
         ("###", "Header 3"),
     ]
     text_splitter = MarkdownHeaderTextSplitter(
-        headers_to_split_on=headers, strip_headers=False
+        headers_to_split_on=headers, strip_headers=True
     )
     chunks = text_splitter.split_text(documents)
+    for chunk in chunks:
+        chunk_headers = " ".join(chunk.metadata.values())
+        chunk.page_content = f"{chunk_headers} {chunk.page_content}"
     return chunks
 
 
