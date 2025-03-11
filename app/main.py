@@ -1,5 +1,6 @@
 from app.models import AskRequest, AskResponse
 from fastapi import FastAPI, Request, Depends
+from fastapi.middleware.cors import CORSMiddleware
 from slowapi import Limiter
 from slowapi.util import get_remote_address
 from slowapi.middleware import SlowAPIMiddleware
@@ -9,7 +10,19 @@ from app.queries import process_query
 from app.auth import validate_api_key
 
 app = FastAPI(dependencies=[Depends(validate_api_key)])
+origins = [
+    "http://localhost:3000",  # Local development
+    "https://your-frontend-domain.com",  # Production frontend URL
+]
 
+# Add CORSMiddleware to your app
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=origins,  # Allow requests from the listed origins
+    allow_credentials=True,
+    allow_methods=["*"],  # Allow all HTTP methods (GET, POST, PUT, DELETE)
+    allow_headers=["*"],  # Allow all headers
+)
 
 # Initialize rate limiter (tracks requests by IP)
 limiter = Limiter(key_func=get_remote_address)
@@ -29,7 +42,7 @@ async def rate_limit_handler(request: Request, exc: RateLimitExceeded):
 @app.get("/")
 @limiter.limit("5/minute")  # Allow 5 requests per minute to the / endpoint
 def read_root(request: Request):
-    return {"Hello": "World"}
+    return {"answer": "World"}
 
 
 @app.post("/ask/", response_model=AskResponse)
