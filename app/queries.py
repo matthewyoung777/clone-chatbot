@@ -4,6 +4,9 @@ from dotenv import load_dotenv
 from langchain_core.prompts import ChatPromptTemplate
 from langchain_openai import ChatOpenAI
 
+from app.db import search_embeddings
+from app.embeddings import generate_query_embedding
+
 # Add the project root to sys.path
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
 
@@ -55,3 +58,16 @@ def ask_gpt(context, query):
     ai_msg
 
     return ai_msg
+
+
+def process_query(query):
+    # Generate query embedding
+    query_embedding = generate_query_embedding(query)
+
+    # Run a vector similarity search and return the results (chunks)
+    search_results = search_embeddings(query_embedding)
+
+    # Get the answer from ask_gpt
+    answer = ask_gpt(search_results, query)
+
+    return answer.content
