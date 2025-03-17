@@ -6,7 +6,6 @@ import os
 
 load_dotenv()
 
-# Replace this with the actual API key (you could store it in an environment variable for better security)
 CHATBOT_API_KEY = os.environ["CHATBOT_API_KEY"]
 
 

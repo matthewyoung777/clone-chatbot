@@ -36,7 +36,7 @@ def create_prompt(context, query):
     - Keep the response clear and to the point
     - Answer in a friendly manner, as if you were me (Matt)
     - Do not say "according to the context" or anything similar in the response.
-    - Keep answers 1000 characters or less.
+    - Keep answers short and concise.
     """
     )
     return prompt.format(context=context, query=query)
@@ -61,13 +61,8 @@ def ask_gpt(context, query):
 
 
 def process_query(query):
-    # Generate query embedding
     query_embedding = generate_query_embedding(query)
-
-    # Run a vector similarity search and return the results (chunks)
     search_results = search_embeddings(query_embedding)
-
-    # Get the answer from ask_gpt
     answer = ask_gpt(search_results, query)
 
     return answer.content

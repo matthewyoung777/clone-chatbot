@@ -8,17 +8,18 @@ from slowapi.errors import RateLimitExceeded
 from starlette.responses import JSONResponse
 from app.queries import process_query
 from app.auth import validate_api_key
+import lorem
 
 app = FastAPI(dependencies=[Depends(validate_api_key)])
 origins = [
     "http://localhost:3000",  # Local development
-    "https://your-frontend-domain.com",  # Production frontend URL
+    "https://matthewyoung.info",  # Production frontend URL
 ]
 
-# Add CORSMiddleware to your app
+
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=origins,  # Allow requests from the listed origins
+    allow_origins=origins,
     allow_credentials=True,
     allow_methods=["*"],  # Allow all HTTP methods (GET, POST, PUT, DELETE)
     allow_headers=["*"],  # Allow all headers
@@ -40,13 +41,18 @@ async def rate_limit_handler(request: Request, exc: RateLimitExceeded):
 
 
 @app.get("/")
-@limiter.limit("5/minute")  # Allow 5 requests per minute to the / endpoint
+# @limiter.limit("5/minute")
 def read_root(request: Request):
-    return {"answer": "World"}
+    return {"answer": lorem.paragraph()}
 
 
-@app.post("/ask/", response_model=AskResponse)
-@limiter.limit("5/minute")  # Allow 5 requests per minute to the / endpoint
+@app.get("/wake")
+def wake_up(request: Request):
+    return {"answer": "I'm awake"}
+
+
+@app.post("/ask", response_model=AskResponse)
+@limiter.limit("10/minute")
 def ask_question(
     request: Request,
     question: AskRequest,
