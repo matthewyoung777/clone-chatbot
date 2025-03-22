@@ -4,7 +4,7 @@ from dotenv import load_dotenv
 from langchain_core.prompts import ChatPromptTemplate
 from langchain_openai import ChatOpenAI
 
-from app.db import search_embeddings
+from app.db import search_embeddings, add_question
 from app.embeddings import generate_query_embedding
 
 # Add the project root to sys.path
@@ -64,5 +64,8 @@ def process_query(query):
     query_embedding = generate_query_embedding(query)
     search_results = search_embeddings(query_embedding)
     answer = ask_gpt(search_results, query)
-
+    if answer.content == "Sorry I can't answer that.":
+        add_question(query, answered=False)
+    else:
+        add_question(query, answered=True)
     return answer.content

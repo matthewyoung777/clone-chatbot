@@ -28,6 +28,40 @@ def create_table():
     conn.close()
 
 
+def create_questions_table():
+    try:
+        with psycopg2.connect(DATABASE_URL) as conn:
+            with conn.cursor() as cursor:
+                cursor.execute(
+                    """
+                    CREATE TABLE IF NOT EXISTS questions (
+                    id SERIAL PRIMARY KEY,
+                    value TEXT NOT NULL,
+                    answered BOOLEAN DEFAULT FALSE,
+                    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+                    );
+                    """
+                )
+                conn.commit()
+    except Exception as e:
+        print(f"Error creating table: {e}")
+
+
+def add_question(value, answered=False):
+    try:
+        with psycopg2.connect(DATABASE_URL) as conn:
+            with conn.cursor() as cursor:
+                cursor.execute(
+                    """
+                    INSERT INTO questions (value, answered) VALUES (%s, %s);
+                    """,
+                    (value, answered),
+                )
+                conn.commit()
+    except Exception as e:
+        print(f"Error adding question: {e}")
+
+
 def batch_insert_embeddings(chunks, embeddings):
     """Insert multiple text contents and their embeddings into the database in one batch."""
     conn = None
@@ -104,3 +138,7 @@ def clear_embeddings_table():
 
     cursor.close()
     conn.close()
+
+
+if __name__ == "__main__":
+    create_questions_table()
