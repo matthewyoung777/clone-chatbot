@@ -138,7 +138,3 @@ def clear_embeddings_table():
 
     cursor.close()
     conn.close()
-
-
-if __name__ == "__main__":
-    create_questions_table()
