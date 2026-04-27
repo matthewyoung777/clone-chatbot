@@ -1,3 +1,4 @@
+import asyncio
 from app.models import AskRequest, AskResponse
 from fastapi import FastAPI, Request, Depends
 from fastapi.middleware.cors import CORSMiddleware
@@ -53,9 +54,9 @@ def wake_up(request: Request):
 
 @app.post("/ask", response_model=AskResponse)
 @limiter.limit("10/minute")
-def ask_question(
+async def ask_question(
     request: Request,
     question: AskRequest,
 ):
-    answer = process_query(question.question)
+    answer = await asyncio.to_thread(process_query, question.question)
     return AskResponse(answer=answer)
