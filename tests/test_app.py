@@ -1,4 +1,4 @@
-from unittest.mock import MagicMock, patch
+from unittest.mock import patch
 import pytest
 from fastapi.testclient import TestClient
 
@@ -15,12 +15,12 @@ def mock_env(monkeypatch):
 
 @pytest.fixture
 def client(mock_env):
-    # Patch the connection pool so importing app.db doesn't dial Postgres
-    with patch("psycopg2.pool.ThreadedConnectionPool"):
-        # Patch OpenAIEmbeddings so importing app.embeddings doesn't call OpenAI
-        with patch("app.embeddings.OpenAIEmbeddings"):
-            from app.main import app
-            yield TestClient(app)
+    # Patch pool and OpenAI clients before app modules are imported
+    with patch("psycopg_pool.ConnectionPool"):
+        with patch("app.embeddings.OpenAI"):
+            with patch("app.queries.OpenAI"):
+                from app.main import app
+                yield TestClient(app)
 
 
 def test_wake_requires_api_key(client):

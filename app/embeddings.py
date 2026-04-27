@@ -1,26 +1,37 @@
+import re
 import os
+from openai import OpenAI
 from dotenv import load_dotenv
-from langchain_text_splitters import MarkdownHeaderTextSplitter
-from langchain_openai import OpenAIEmbeddings
 
 load_dotenv()
 
-_embeddings = OpenAIEmbeddings(model="text-embedding-ada-002")
+_client = OpenAI()
+_EMBEDDING_MODEL = "text-embedding-3-small"
 
 
-def get_chunks_by_headers(documents):
-    headers = [
-        ("#", "Header 1"),
-        ("##", "Header 2"),
-        ("###", "Header 3"),
-    ]
-    text_splitter = MarkdownHeaderTextSplitter(
-        headers_to_split_on=headers, strip_headers=True
-    )
-    chunks = text_splitter.split_text(documents)
-    for chunk in chunks:
-        chunk_headers = " ".join(chunk.metadata.values())
-        chunk.page_content = f"{chunk_headers} {chunk.page_content}"
+def get_chunks_by_headers(text):
+    """Split markdown by header hierarchy, prepending a breadcrumb to each chunk."""
+    header_re = re.compile(r'^(#{1,3}) (.+)$', re.MULTILINE)
+    matches = list(header_re.finditer(text))
+
+    active_headers = {}  # level (1/2/3) -> header text
+    chunks = []
+
+    for i, match in enumerate(matches):
+        level = len(match.group(1))
+        header = match.group(2).strip()
+
+        active_headers[level] = header
+        active_headers = {k: v for k, v in active_headers.items() if k <= level}
+
+        content_start = match.end()
+        content_end = matches[i + 1].start() if i + 1 < len(matches) else len(text)
+        content = text[content_start:content_end].strip()
+
+        if content:
+            breadcrumb = " ".join(active_headers[l] for l in sorted(active_headers))
+            chunks.append(f"{breadcrumb} {content}")
+
     return chunks
 
 
@@ -28,12 +39,11 @@ def generate_embeddings(chunks, batch_size=4):
     all_embeddings = []
     for i in range(0, len(chunks), batch_size):
         batch = chunks[i : i + batch_size]
-        batch_embeddings = _embeddings.embed_documents(
-            [chunk.page_content for chunk in batch]
-        )
-        all_embeddings.extend(batch_embeddings)
+        response = _client.embeddings.create(model=_EMBEDDING_MODEL, input=batch)
+        all_embeddings.extend([item.embedding for item in response.data])
     return all_embeddings
 
 
 def generate_query_embedding(query):
-    return _embeddings.embed_query(query)
+    response = _client.embeddings.create(model=_EMBEDDING_MODEL, input=query)
+    return response.data[0].embedding
