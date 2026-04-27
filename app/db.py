@@ -1,5 +1,4 @@
 import psycopg
-from psycopg_pool import ConnectionPool
 import os
 from contextlib import contextmanager
 from dotenv import load_dotenv
@@ -8,13 +7,18 @@ import json
 load_dotenv()
 DATABASE_URL = os.environ["DATABASE_URL"]
 
-_pool = ConnectionPool(conninfo=DATABASE_URL, min_size=1, max_size=10)
-
 
 @contextmanager
 def get_conn():
-    with _pool.connection() as conn:
+    conn = psycopg.connect(DATABASE_URL)
+    try:
         yield conn
+        conn.commit()
+    except Exception:
+        conn.rollback()
+        raise
+    finally:
+        conn.close()
 
 
 def create_table():

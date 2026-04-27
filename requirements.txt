@@ -26,7 +26,6 @@ openai==1.63.0
 orjson==3.10.15
 packaging==24.2
 psycopg[binary]==3.3.3
-psycopg-pool==3.3.0
 pydantic==2.10.6
 pydantic-settings==2.8.1
 pydantic_core==2.27.2
