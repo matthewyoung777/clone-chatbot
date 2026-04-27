@@ -1,5 +1,5 @@
-import psycopg2
-import psycopg2.pool
+import psycopg
+from psycopg_pool import ConnectionPool
 import os
 from contextlib import contextmanager
 from dotenv import load_dotenv
@@ -8,20 +8,13 @@ import json
 load_dotenv()
 DATABASE_URL = os.environ["DATABASE_URL"]
 
-_pool = psycopg2.pool.ThreadedConnectionPool(minconn=1, maxconn=10, dsn=DATABASE_URL)
+_pool = ConnectionPool(conninfo=DATABASE_URL, min_size=1, max_size=10)
 
 
 @contextmanager
 def get_conn():
-    conn = _pool.getconn()
-    try:
+    with _pool.connection() as conn:
         yield conn
-        conn.commit()
-    except Exception:
-        conn.rollback()
-        raise
-    finally:
-        _pool.putconn(conn)
 
 
 def create_table():
@@ -68,8 +61,8 @@ def add_question(value, answered=False):
 
 def batch_insert_embeddings(chunks, embeddings):
     data_to_insert = [
-        (chunks[i].page_content, json.dumps(embedding))
-        for i, embedding in enumerate(embeddings)
+        (chunk, json.dumps(embedding))
+        for chunk, embedding in zip(chunks, embeddings)
     ]
     with get_conn() as conn:
         with conn.cursor() as cursor:
