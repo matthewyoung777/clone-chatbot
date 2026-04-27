@@ -2,234 +2,136 @@
 
 ## Background
 
-I am a full-stack software engineer with a background in economics and a passion for building engaging and functional applications. After graduating from Hack Reactor’s intensive 19-week program, they have been focused on expanding their skills by improving past projects, adding new features, and exploring new frameworks and tools. With experience in both frontend and backend development, I enjoy crafting intuitive user interfaces while also designing efficient APIs. Their work spans across multiple domains, from fitness and AI-driven chatbots to stock trading simulations, showcasing their versatility and problem-solving abilities.
+I'm a full-stack software engineer with a background in economics. I got into coding a bit later than most — I worked for a few years after college before deciding to make the switch and join a bootcamp. Since then I've been building things on my own time, picking up new tools as I go, and trying to get better at both the frontend and backend sides of things. I like building stuff that actually gets used, not just toy projects.
 
 ## Education
 
-For undergrad, I went to the University of Washington in Seattle. While I was there I majored in Economics, with an emphasis on statistics, data analysis, and programming as well. After working for a few years, I gained an increased interest in technology which drove me to join HackReactor, a full stack software developer bootcamp. HackReactor is a 5 month 10hr/day very intensive program where I learned how to work collaboratively with other developers, and gain a skillset in producing applications from the ground up in python and javascript.
+I went to the University of Washington in Seattle for undergrad, where I majored in Economics with a focus on statistics and data analysis. After a few years in the working world I realized I wanted to go deeper into tech, so I joined HackReactor — a pretty intense 5-month, 10-hour-a-day bootcamp where I learned to build full applications from scratch in Python and JavaScript. It was brutal but worth it.
 
-## Present
-
-Currently, I am working on Forge Fitness, a gamified workout app that blends fitness motivation with game mechanics. I am also developing Clone-Chatbot, a Retrieval-Augmented Generation (RAG) project designed to replicate their own knowledge and experiences. Our approach to development is hands-on and iterative, preferring to deeply understand concepts rather than follow tutorials. Beyond software engineering, I enjoy dystopian and sci-fi TV shows, strategic games, and continuously working on side projects that merge their love for technology and creativity.
-
-## Side Projects & Tech Interests
-
-One of my hobbies is working on **side projects**, especially combining tech and fitness. Right now, I'm building **Forge Fitness**, a workout app, with a couple of friends. We're trying to bring game mechanics into the fitness space to make working out more engaging and motivating.
-I'm also working on this app, a RAG clone of myself that I want to be able to talk as if it were myself!
-
-## Hobbys
+## Hobbies
 
 ### NBA Basketball (Golden State Warriors)
 
-I'm a big fan of the **Golden State Warriors** and have been for a long time, starting 2006 when watching the we believe team. Watching Steph Curry's development has been my favorite part of being a warrior fan over the years.
+I've been a Warriors fan since 2006 — the "We Believe" era with Baron Davis. Been through the highs and lows. Watching Steph Curry develop from a somewhat overlooked draft pick into arguably the best shooter ever has been the highlight of being a fan.
 
 ### Premier League Soccer (Tottenham Hotspur)
 
-I support **Tottenham Hotspur** in the Premier League, always hoping they finally secure some silverware. Son is my favorite club player, and although it can be hard to support them at times due to their shortcomings, I'm always going to be rooting for them.
+I support Spurs, which means I spend a lot of time hoping and not a lot of time celebrating. Son Heung-min is my favorite player on the squad. It can be painful supporting them but I'm not going anywhere.
 
 ### Video Games
 
-I consider them sports
+I consider them sports, genuinely.
 
-- **Overwatch** – I enjoy the competitive team-based strategy aspect and have reached Grandmaster Rank, so I guess you could say I'm pretty good. My favorite characters are Genji and Ana
-- **Marvel Rivals** – Another competetive team-based game I love. I enjoy playing black panther and psylocke for their assassin-style gameplay, I like how fast paced and flashy they can be.
+- **Overwatch** – Hit Grandmaster rank, so I'm pretty comfortable saying I'm decent. I main Genji and Ana, which is kind of a weird combo but it works for me.
+- **The Witcher 3** – One of the best RPGs ever made. The world-building and side quests are better than most games' main stories.
+- **Subnautica** – Survival/exploration game set entirely underwater. Genuinely unsettling in the best way — nothing like the feeling of descending into deep water not knowing what's down there.
 
 ### Tennis
 
-In my youth and still sometimes today I played tennis, and funnily my deadliest shot was actually my two-handed backhand. I played a lot in junior high and high school.
+Played a lot growing up, junior high and high school. My best shot was ironically my two-handed backhand. Still pick up a racket occasionally.
 
 ### Music (Piano & Trumpet)
 
-I used to play both the **piano** and **trumpet**, though I don't actively play anymore. I still appreciate good compositions and enjoy listening to classical, jazz, and other genres.
+I played both piano and trumpet when I was younger. Don't really play anymore but I still listen to a lot of classical and jazz.
 
 ## Favorite Foods
 
-- **Ramen** – Rich broth, firm noodles, and flavorful toppings make it one of my go-to meals.
-- **Dumplings** – Love them in all forms, whether steamed, pan-fried, or soup-filled.
-- **Pizza** – My favorite toppings are **sausage and pepperoni** for the perfect mix of flavor and spice.
+- **Ramen** – Good broth, firm noodles, solid toppings. Hard to beat.
+- **Dumplings** – Any style. Steamed, pan-fried, soup dumplings — all of it.
+- **Pizza** – Sausage and pepperoni, no notes.
 
-## Favorite TV Shows & Genres
+## Favorite TV Shows
 
-I love watching **dramas, dystopian shows, and sci-fi**. Some of my all-time favorite shows include:
+I gravitate toward dramas, dystopian stuff, and sci-fi.
 
-- **Breaking Bad** – One of the best-written shows, with amazing character development and storytelling.
-- **Black Mirror** – Love its dark and thought-provoking take on technology and society.
+- **Breaking Bad** – Probably the best-written show I've seen. The character arc is just unreal.
+- **Black Mirror** – Not always easy to watch but it makes you think. Love the anthology format.
+- **Dark** – German time travel show on Netflix. Incredibly dense and well-constructed — the way they tie everything together across three seasons is genuinely impressive. Subtitles required but absolutely worth it.
+- **Demon Slayer** – My favorite anime. The animation is stunning and the fights are some of the best I've seen in any medium.
 
 ## Favorite Movies
 
-- **Interstellar** – A mind-bending space adventure with stunning visuals and an incredible score.
-- **Ocean's 11** – A fun and stylish heist movie with a great cast.
-- **Tron Legacy** – Love the cyberpunk aesthetics and the Daft Punk soundtrack.
-- **RV** – A lighthearted, nostalgic comedy that's just fun to watch.
+- **Interstellar** – The score, the visuals, the time stuff. Gets me every time.
+- **Ocean's 11** – Just a fun, well-made heist movie. Great cast, great pacing.
+- **Tron Legacy** – The Daft Punk soundtrack alone puts this in my top list.
+- **RV** – Look, it's not a prestige film. It's just a good time.
 
 # Projects
 
-## Forge Fitness Project
+## Forge Fitness
 
-**September 2023 – Present** (Part-time side project)
+**September 2023 – Present** (part-time side project)
 
-### Overview
+Forge Fitness is a workout app I'm building with a couple of friends. The idea is to make working out feel more like a game — you earn points, rank up, unlock stuff. We thought most fitness apps were either too clinical or too fluffy, so we wanted something that actually felt engaging to use.
 
-Forge Fitness is a mobile application designed to enhance users' fitness journey in a gamified way. It includes:
+It's built around a forge/anvil theme. You can build custom workouts or auto-generate them based on your goals and what muscle groups you want to hit. There's a ranking system with tiers (Bronze through Diamond) and a battle pass-style progression that unlocks rewards over time. The app also tracks your sets, reps, and weights over time so you can see actual progress, and we're working in some AI-powered suggestions that adapt based on your workout history.
 
-- Personalized workout plans
-- Real-time progress tracking
-- An engaging ranking system to encourage consistency
-
-Built around a **Forge/Anvil theme**, the app provides an immersive experience where users can:
-
-- Craft or auto-generate workouts
-- Track performance
-- Complete challenges
-- Unlock achievements
-
-### Features
-
-#### Personalized Workout Generator
-
-- Users create workout routines based on goals (strength, toning, weight loss)
-- Dynamic generator customizes workouts based on selected focus areas (e.g., biceps, triceps, shoulders)
-- **Challenge System** rewards users with points and achievements
-
-#### Rank System with Battle Pass Theme
-
-- Users earn points for workouts and exercises
-- **Rank tiers:** Bronze, Silver, Gold, Platinum, Diamond
-- **Battle Pass progression system** unlocks rewards over time
-
-#### Exercise Templates & Custom Workouts
-
-- Access a database of hundreds of exercises
-- Covers compound (squats, deadlifts) & isolation exercises
-- Users can build custom workouts from scratch
-
-#### Performance Tracking & Analytics
-
-- Logs workouts, sets, reps, and weights
-- **Visual dashboards** for progress insights
-- Tracks improvements in strength, endurance, and growth
-
-#### AI-Powered Smart Recommendations
-
-- Learns from user workout data
-- Suggests improvements, variations, and new challenges
-- Helps break plateaus with adaptive feedback
-
-### Future Development Plans
-
-- **Enhanced AI** for smarter workout recommendations
-- **Wearable integration** for real-time tracking
-- **Community features** (challenges, competition with friends)
-- **More complex ranking system** for exclusive unlocks
-
-### Join the Forge Fitness Journey
-
-Whether you're a beginner or an experienced athlete, Forge Fitness provides:
-
-- **Tools** for structured training
-- **Motivation** through gamification
-- **A community** to stay accountable
-
-### Tech Stack Overview
-
-- **Frontend:** Expo (Cross-platform development for iOS & Android) and React Native UI built with TypeScript & React
-
-- **Backend:** Node.js & Express.js RESTful API for handling logic, JWT (JSON Web Tokens) for secure authentication and MongoDB NoSQL database for workouts & user data
-
-- **AI:** OpenAI API (GPT-4)
-
-- **Infrastructure & Deployment:** Render Cloud hosting with CI/CD and scaling
-
-### Development Processs
-
-- **Lead Developer:** Oversees project vision & execution
-- **Team of 3 developers:** Experienced colleagues working part-time
-- **Agile workflow:** Bug reporting, prioritization, and communication
-- **Documentation:** API details, consistent styling, code-typing
+**Tech:** React Native + Expo (TypeScript), Node.js + Express backend, MongoDB, OpenAI API (GPT-4), deployed on Render. Team of 3 working part-time.
 
 ---
 
-## Paper Stonks Project
+## Tea Run
 
-### Overview
+Tea Run is an app I built solo for coordinating group tea and coffee runs — the kind where someone's heading to a café and wants to grab drinks for the whole team. You create a group, start a run, set a deadline, and your teammates drop their orders in before you leave. The runner gets one clean screen with everyone's orders and Venmo links for payment.
 
-Paper Stonks is a web application designed for paper trading, allowing users to buy and sell stocks without real money while testing portfolio strategies. The platform enables users to simulate real-world trading experiences, track portfolio performance, and analyze stock price history with interactive charts. Built over just 1.5 months as a small team during a coding bootcamp, Paper Stonks was designed to provide an intuitive and educational environment for users to practice trading without financial risk.
+It's live on the App Store. Landing page at [tea-run.com](https://tea-run.com/).
 
-### Features
+The interesting technical parts were getting realtime order syncing to work smoothly (Supabase Realtime subscriptions on the orders table), and dealing with Supabase's Row Level Security policies for group membership without causing infinite recursion — ended up using a `SECURITY DEFINER` helper function to handle that cleanly.
 
-- **Fake Funds Management:** Users start with a predefined amount of virtual money and can add more to test different trading strategies. This allows them to experiment with riskier trades, diversification, and portfolio management techniques.
+**Tech:** React Native + Expo SDK 54 (TypeScript), React Navigation, Supabase (Postgres + Realtime + Auth), passwordless magic link login via Resend, expo-secure-store for session persistence.
 
-- **Paper Trading:** Users can buy and sell stocks using virtual funds, simulating real market transactions. The app tracks purchase prices, trade history, and profit/loss over time to give users a realistic investing experience.
+---
 
-- **Stock Price History:** Users can access historical stock price data visualized through **Chart.js**. This feature helps traders analyze trends, spot patterns, and make more informed buying or selling decisions. The app fetches real-time and past market data from **Alpha Vantage**, ensuring accurate information.
+## Paper Stonks
 
-- **Portfolio Tracking:** The application continuously updates the user’s portfolio, displaying overall account value, individual stock holdings, percentage gains/losses, and past trade performance. This helps users refine their strategies over time based on simulated returns.
+Paper Stonks was a paper trading web app I built with a small team during my bootcamp — we had about 1.5 months to put it together. The idea was to let people practice buying and selling stocks with fake money, so they could experiment with strategies without any real risk.
 
-### Tech Stack
+Users start with a set amount of virtual funds, can look up stock price history, make trades, and track how their portfolio is doing over time. We pulled real market data from Alpha Vantage and visualized it with Chart.js. It's not live anymore but it was a solid project for the time frame we had.
 
-- **Frontend:** Built with **React.js**, providing a dynamic and responsive user interface for seamless trading interactions.
+**Tech:** React.js frontend, FastAPI (Python) backend, JWT auth, Alpha Vantage API, Chart.js, previously hosted on Heroku with Docker for the microservices.
 
-- **Backend:** Powered by **FastAPI (Python)**, ensuring fast, asynchronous API responses for stock queries and trade executions.
--
-- **Authentication:** Secure user access is managed with **JWT-based authentication (JSON Web Token)**, ensuring safe login sessions and account security.
+---
 
-- **Microservices Architecture:** The application is designed with dedicated services for authentication and trading, enabling scalability and better system organization.
+## RAG Clone Chatbot
 
-- **Stock Data API:** Real-time and historical stock market data is retrieved from **Alpha Vantage**, giving users up-to-date insights into stock performance.
+This one is pretty meta — it's a chatbot that's supposed to answer questions as if it were me. I feed it information about my background, projects, work history, and interests, and it uses RAG (Retrieval-Augmented Generation) to pull the relevant context and respond in first person.
 
-- **Charts & Visualization:** Implemented using **Chart.js** to generate interactive graphs for stock price trends, portfolio value changes, and performance analytics.
+When someone asks a question, it embeds the query, finds the closest matching chunks from my knowledge base via cosine similarity, and passes that context to GPT-4o-mini which responds as me. It works better than I expected honestly.
 
-- **Deployment:** The platform is no longer but was hosted using **Heroku**, with **Docker containers** for managing microservices for authentication and trading logic.
-
-## RAG Clone chatbot Project
-
-### Overview
-
-The goal of this project is to use python, RAG, LLMs and AI to create a chatbot AI of myself that can answer questions about me and my background, my work history, projects, interests etc.
-
-### Tech Stack
-
-Backend: FastAPI (python)
-Database: PostgreSQL pgvector for vector store
-LLM API: OpenAI gpt4o-mini
-Embedding Model: OpenAI's text-embedding-ada-002
-Deployment: Render (backend hosting)
-
-### Features
-
-- **Knowledge Base**
-
-A collection of structured and unstructured data (e.g., resumes, project descriptions, work experience, personal interests).
-Documents will be embedded into a vector database for efficient retrieval.
-
-- **Retrieval-Augmented Generation (RAG)**
-
-When a user asks a question, the chatbot retrieves the most relevant information from your knowledge base.
-The retrieved context is then used to enhance the response generated by the LLM.
+**Tech:** FastAPI (Python), PostgreSQL with pgvector, OpenAI gpt-4o-mini, text-embedding-ada-002 for embeddings, deployed on Render.
 
 # Work Experience
 
-## Software Engineer Intern - MiniMe AI
+## Test Engineer – Quanta Manufacturing Fremont
 
-_Apr 2024 - Dec 2024 · 9 months_
+_Apr 2025 – Present_
 
-- Developed a Retrieval-Augmented Generation (RAG) system to enhance product functionality by integrating LLMs with custom knowledge bases. This was done in python using langchain and pgvector in PostgreSQL.
-- Automated data preprocessing for an AI chatbot by building a pipeline for crawling, cleaning, and transcription, boosting RAG data quality.
-- Improved development efficiency by 50% through modular Python packages, enhancing reusability and streamlining workflows.
+- Defined and supported test processes for production hardware — servers, switches, storage devices, fully configured racks
+- Developed test scripts and test plans covering functional and system-level validation
+- Worked closely with R&D, Test Development, and Manufacturing to analyze test data, troubleshoot defects, and document results
+- Built automated test processes to improve reliability and consistency across new and existing hardware
 
-## Software Engineer Intern - Networky\.ai
+## Software Engineer Intern – MiniMe AI
 
-_Oct 2023 - Apr 2024 · 7 months_
+_Apr 2024 – Dec 2024 · 9 months_
 
-- Engineered a highly responsive and user-friendly mobile site, optimizing it for on-the-go networking to enhance user experience.
-- Developed a bespoke product metrics dashboard utilizing SQL querying, delivering actionable marketing insights and driving user acquisition up 15%.
-- Thoroughly documented the development lifecycle, architectural nuances, code structure, and deployment protocols to facilitate future reference and foster knowledge sharing among team members.
-- Worked primarily with Python and JavaScript
+- Built a RAG system in Python using LangChain and pgvector to enhance the product's AI features
+- Built a data preprocessing pipeline for crawling, cleaning, and transcribing content to improve RAG data quality
+- Improved development efficiency by ~50% by packaging reusable Python modules across the team
 
-## Autonomous Vehicle Test Specialist - Cruise
+## Software Engineer Intern – Networky.ai
 
-_Nov 2019 - Jul 2022 · 2 yrs 9 months_
+_Oct 2023 – Apr 2024 · 7 months_
 
-- Increased drivable testing zones by 50% through lane and route mapping techniques.
-- Pinpointed and communicated problematic drive behavior data with engineers, reducing errors by 30%.
-- Trained fleet operators, introducing new techniques for vehicle testing, which increased driverless mileage accumulation by 100%.
+- Built and optimized a mobile-friendly site for on-the-go networking
+- Built a product metrics dashboard using SQL queries that helped surface marketing insights and contributed to a 15% increase in user acquisition
+- Documented the development lifecycle, architecture, and deployment processes for the team
+- Worked primarily in Python and JavaScript
+
+## Autonomous Vehicle Test Specialist – Cruise
+
+_Nov 2019 – Jul 2022 · 2 years 9 months_
+
+- Expanded drivable testing zones by 50% through lane and route mapping
+- Identified and reported problematic vehicle behavior to engineers, helping reduce errors by 30%
+- Trained fleet operators on new testing techniques, which increased driverless mileage accumulation by 100%
