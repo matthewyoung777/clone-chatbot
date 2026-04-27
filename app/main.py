@@ -9,7 +9,6 @@ from slowapi.errors import RateLimitExceeded
 from starlette.responses import JSONResponse
 from app.queries import process_query
 from app.auth import validate_api_key
-import lorem
 
 app = FastAPI(dependencies=[Depends(validate_api_key)])
 origins = [
@@ -40,11 +39,6 @@ async def rate_limit_handler(request: Request, exc: RateLimitExceeded):
         content={"error": "Too many requests. Please wait and try again later."},
     )
 
-
-@app.get("/")
-# @limiter.limit("5/minute")
-def read_root(request: Request):
-    return {"answer": lorem.paragraph()}
 
 
 @app.get("/wake")

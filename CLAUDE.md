@@ -19,7 +19,7 @@ CHATBOT_API_KEY   # Secret key required in X-API-KEY header for all requests
 Install:
 ```bash
 pip install "psycopg[binary]" psycopg-pool openai fastapi "uvicorn[standard]" gunicorn \
-            slowapi python-dotenv lorem
+            slowapi python-dotenv
 ```
 
 Remove if present (replaced by raw openai SDK):
