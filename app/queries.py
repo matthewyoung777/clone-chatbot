@@ -55,15 +55,14 @@ def ask_gpt(context, query):
     messages = [prompt]
 
     ai_msg = llm.invoke(messages)
-    ai_msg
-
     return ai_msg
 
 
 def process_query(query):
     query_embedding = generate_query_embedding(query)
-    search_results = search_embeddings(query_embedding)
-    answer = ask_gpt(search_results, query)
+    chunks = search_embeddings(query_embedding)
+    context = "\n\n".join(chunks)
+    answer = ask_gpt(context, query)
     if answer.content == "Sorry I can't answer that.":
         add_question(query, answered=False)
     else:
